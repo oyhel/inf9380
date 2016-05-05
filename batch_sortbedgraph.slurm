@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=batch-sortbedgraph
+#SBATCH --job-name=b_sortbedgraph
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=1
 #SBATCH --mem-per-cpu=3G
@@ -18,7 +18,7 @@ cp T1_INPUT.bedGraph $SCRATCH
 chkfile N1_CHIP_sorted.bedGraph
 chkfile N1_INPUT_sorted.bedGraph
 chkfile T1_CHIP_sorted.bedGraph
-chkfile N1_CHIP_sorted.bedGraph
+chkfile T1_INPUT_sorted.bedGraph
 
 # script
 cd $SCRATCH

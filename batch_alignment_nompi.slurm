@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=alignment
+#SBATCH --job-name=nompi_alignment
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=8
 #SBATCH --mem-per-cpu=3G
@@ -23,7 +23,7 @@ chkfile T1_INPUT.sam
 
 # script
 cd $SCRATCH
-bowtie -p 7 -S -v 2 -m 1 data/saci data/N1_CHIP.fastq > N1_CHIP.sam
-bowtie -p 7 -S -v 2 -m 1 data/saci data/N1_INPUT.fastq > N1_INPUT.sam
-bowtie -p 7 -S -v 2 -m 1 data/saci data/T1_CHIP.fastq > T1_CHIP.sam
-bowtie -p 7 -S -v 2 -m 1 data/saci data/T1_INPUT.fastq > T1_INPUT.sam
+bowtie -p 7 -S -v 2 -m 1 saci N1_CHIP.fastq > N1_CHIP.sam
+bowtie -p 7 -S -v 2 -m 1 saci N1_INPUT.fastq > N1_INPUT.sam
+bowtie -p 7 -S -v 2 -m 1 saci T1_CHIP.fastq > T1_CHIP.sam
+bowtie -p 7 -S -v 2 -m 1 saci T1_INPUT.fastq > T1_INPUT.sam

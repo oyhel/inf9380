@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=mpi-alignment
+#SBATCH --job-name=b_mpi-alignment
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=8
 #SBATCH --mem-per-cpu=3G

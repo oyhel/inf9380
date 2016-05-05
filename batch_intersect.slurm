@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=batch-mergepeaks 
+#SBATCH --job-name=b_intersect 
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=1
 #SBATCH --mem-per-cpu=3G
@@ -14,7 +14,7 @@ cp N1_CHIP_sorted.bam $SCRATCH
 cp T1_CHIP_sorted.bam $SCRATCH
 cp N1_INPUT_sorted.bam $SCRATCH
 cp T1_INPUT_sorted.bam $SCRATCH
-cp N1_T1_merged_peaks.bed
+cp N1_T1_merged_peaks.bed $SCRATCH
 
 chkfile	N1_CHIP_countR.txt
 chkfile T1_CHIP_countR.txt

@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=aws_normalization
+#SBATCH --job-name=b_normalization
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=1
 #SBATCH --mem-per-cpu=3G
@@ -25,4 +25,4 @@ chkfile histogram_logfoldChange_raw_counts.pdf
 
 # script
 cd $SCRATCH
-time Rscript makeplots.R
+Rscript makeplots.R

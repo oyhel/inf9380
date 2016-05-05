@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=mpi-alignment
+#SBATCH --job-name=b_getbam
 #SBATCH --account=ln0002k
-#SBATCH --ntasks=8
+#SBATCH --ntasks=1
 #SBATCH --mem-per-cpu=3G
 #SBATCH --time=01:00:00
 

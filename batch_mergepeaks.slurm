@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=batch-mergepeaks
+#SBATCH --job-name=b_mergepeaks
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=1
 #SBATCH --mem-per-cpu=3G

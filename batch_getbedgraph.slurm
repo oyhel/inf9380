@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=batch-getbedgraph
+#SBATCH --job-name=b_getbedgraph
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=1
 #SBATCH --mem-per-cpu=3G
@@ -8,7 +8,7 @@
 source /cluster/bin/jobsetup
 
 module purge
-module load samtools
+module load bedtools
 
 cp data/sacisizes.txt $SCRATCH
 cp N1_CHIP_sorted.bam $SCRATCH
