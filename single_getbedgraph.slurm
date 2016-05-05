@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=getBedGraph
+#SBATCH --job-name=s_getbedgraph
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=1
 #SBATCH --mem-per-cpu=3G
@@ -11,7 +11,9 @@ module purge
 module load samtools
 module load bedtools
 
+# Input: sorted bam file
 input=$1
+# Output: output name of bedGraph file 
 output=$2
 
 chkfile $output

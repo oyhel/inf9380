@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=alignment
+#SBATCH --job-name=s_alignment
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=1
 #SBATCH --mem-per-cpu=3G
@@ -10,7 +10,9 @@ source /cluster/bin/jobsetup
 module purge
 module load bowtie
 
+# Input: The fastq file	for alignment
 input=$1
+# Output: Name of output sam	file
 output=$2
 
 # copy files to compute node

@@ -9,7 +9,9 @@ source /cluster/bin/jobsetup
 
 module purge
 
+# Input: sorted bedGraph file
 input=$1
+# Output: output name of bigWig file
 output=$2
 
 chkfile	$bigwigout

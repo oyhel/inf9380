@@ -10,8 +10,11 @@ source /cluster/bin/jobsetup
 module purge
 module load macs
 
+# Input: sam file for the case sample
 input_case=$1
+# Input: sam file for the control sample
 input_control=$2
+# Input: prefix of the output file, output is <prefix>_peaks.bed
 project_prefix=$3
 
 cp $input_case $SCRATCH

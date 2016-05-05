@@ -10,10 +10,12 @@ source /cluster/bin/jobsetup
 module purge
 module load bedtools
 
-#input sorted bam file
-input=$1
-# output XX_countR.txt 
-output=$2
+# Input: name of sorted bam file to find intersections in
+input1=$1
+# Input: name of merged peaks bed file
+input2=$2
+# Output: name of R formatted reads file 
+output=$3
 
 cp $input $SCRATCH
 cp N1_T1_merged_peaks.bed $SCRATCH
@@ -24,7 +26,7 @@ chkfile $output
 cd $SCRATCH
 
 run_script(){
-	intersectBed -bed -wb -abam $input -b N1_T1_merged_peaks.bed > tmp_intersect.txt
+	intersectBed -bed -wb -abam $input1 -b $input2 > tmp_intersect.txt
 	cut -f13,14,15 tmp_intersect.txt | sort | uniq -c > tmp_ib_count.txt
 	awk '{print $2"_"$3"_"$4"\t"$1}' tmp_ib_count.txt > $output
 }

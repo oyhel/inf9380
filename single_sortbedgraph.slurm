@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=sortBedGraph
+#SBATCH --job-name=s_sortbedgraph
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=1
 #SBATCH --mem-per-cpu=3G
@@ -11,7 +11,9 @@ module purge
 module load samtools
 module load bamtools
 
+# Input: unsorted bedGraph file
 input=$1
+# Output: name of sorted output bedGraph file
 output=$2
 
 chkfile $output

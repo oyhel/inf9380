@@ -11,7 +11,9 @@ module purge
 module load samtools
 module load bedtools
 
+# Input: sam file to convert to bam
 input=$1
+# Output: name of output bam file 
 output=$2
 
 cp $input $SCRATCH

@@ -8,19 +8,22 @@
 source /cluster/bin/jobsetup
 
 module purge
+module load bedtools
 
-input=$1
+# Input: first bed file for merging
+input1=$1
+# Input: second bed file for merging
+input2=$2
+# Output: name of merged peaks bed file
 output=$2
 
-chkfile $bigwigout
+chkfile $output
 
-cp $input $SCRATCH
-cp data/sacisizes.txt $SCRATCH
-cp programs/bedGraphToBigWig $SCRATCH
+cp $input1 $SCRATCH
+cp $input2 $SCRATCH
 
 # script
 cd $SCRATCH
-
-chmod 755 bedGraphToBigWig
-time ./bedGraphToBigWig -unc $input sacisizes.txt $output
-
+cat $input1 $input2 > tmp_peaks.bed
+sort -k1,1 -k2,2n tmp_peaks.bed > tmp_sorted_peaks.bed
+bedtools merge -i tmp_sorted_peaks.bed > $output
