@@ -10,4 +10,4 @@ source /cluster/bin/jobsetup
 module purge
 module load sdag
 
-time sdag sdagworkflow.slurm
+sdag sdagworkflow.sdag
