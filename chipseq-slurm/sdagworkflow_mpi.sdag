@@ -1,0 +1,21 @@
+JOB A batch_alignment_mpi.slurm
+JOB B batch_getbam.slurm
+JOB C batch_sortbam.slurm
+JOB D batch_getbedgraph.slurm
+JOB E batch_sortbedgraph.slurm
+JOB F batch_bigwig.slurm
+JOB G batch_peakcalling.slurm
+JOB H batch_mergepeaks.slurm
+JOB I batch_intersect.slurm
+JOB J batch_normalization.slurm
+
+PARENT A CHILD B
+PARENT B CHILD C
+PARENT C CHILD D
+PARENT D CHILD E
+PARENT E CHILD F
+PARENT A CHILD G
+PARENT F G CHILD H
+PARENT H CHILD I
+PARENT I CHILD J
+

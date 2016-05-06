@@ -1,0 +1,20 @@
+JOB A arrs_alignment.slurm
+JOB B arrs_getbam.slurm
+JOB C arrs_sortbam.slurm
+JOB D arrs_getbedgraph.slurm
+JOB E arrs_sortbedgraph.slurm
+JOB F arrs_bigwig.slurm
+JOB G arrs_peakcalling.slurm
+JOB H arrws_mergepeaks.slurm
+JOB I arrs_intersect.slurm
+JOB J arrws_normalization.slurm
+
+PARENT A CHILD B
+PARENT B CHILD C
+PARENT C CHILD D
+PARENT D CHILD E
+PARENT E CHILD F
+PARENT A CHILD G
+PARENT F G CHILD H
+PARENT H CHILD I
+PARENT I CHILD J
