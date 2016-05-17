@@ -1,0 +1,10 @@
+rs01
+rs10
+rs02
+rs30
+rs34
+rs67
+rs78
+rs94
+rs23
+rs23
