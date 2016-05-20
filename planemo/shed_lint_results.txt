@@ -1,0 +1,13 @@
+Linting repository /home/oyvind/Downloads/planemo/inf9380/planemo
+Applying linter expansion... CHECK
+.. INFO: Included files all found.
+Applying linter tool_dependencies_xsd... CHECK
+.. INFO: No tool_dependencies.xml, skipping.
+Applying linter tool_dependencies_actions... CHECK
+.. INFO: No tool_dependencies.xml, skipping.
+Applying linter repository_dependencies... CHECK
+.. INFO: No repository_dependencies.xml, skipping.
+Applying linter shed_yaml... CHECK
+.. INFO: .shed.yml found and appears to be valid YAML.
+Applying linter readme... CHECK
+.. INFO: No README found skipping.

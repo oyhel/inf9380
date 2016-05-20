@@ -1,0 +1,7 @@
+api_key: 2a6e5b25dffc05d9de47215457e992be
+galaxy_instance: 127.0.0.1
+tools:
+- name: cutwrapper
+  owner: oyvinhel
+  tool_panel_section_label: 'Text Manipulation'
+  tool_shed_url: https://testtoolshed.g2.bx.psu.edu

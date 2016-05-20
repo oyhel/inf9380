@@ -1,0 +1,7 @@
+name: cutwrapper
+owner: oyvinhel
+description: Unix Cut wrapper to cut fields from text files
+homepage_url: http://linux.die.net/man/1/cut
+categories: [Text Manipulation]
+description: cut-wrapper
+type: unrestricted
