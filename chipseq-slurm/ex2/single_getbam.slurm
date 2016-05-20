@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=s_getbam
+#SBATCH --job-name=getbam
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=1
 #SBATCH --mem-per-cpu=3G

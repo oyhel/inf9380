@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=s_intersect
+#SBATCH --job-name=intersect
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=1
 #SBATCH --mem-per-cpu=3G

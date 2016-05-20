@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=s_getbedgraph
+#SBATCH --job-name=getbedgraph
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=1
 #SBATCH --mem-per-cpu=3G
@@ -19,7 +19,7 @@ output=$2
 chkfile $output
 
 cp $input $SCRATCH
-cp data/sacisizes.txt $SCRATCH
+cp ../data/sacisizes.txt $SCRATCH
 
 # script
 

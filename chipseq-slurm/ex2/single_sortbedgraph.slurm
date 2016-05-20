@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=s_sortbedgraph
+#SBATCH --job-name=sortbedgraph
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=1
 #SBATCH --mem-per-cpu=3G

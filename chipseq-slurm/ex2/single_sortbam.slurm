@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=s_sortbam
+#SBATCH --job-name=sortbam
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=1
 #SBATCH --mem-per-cpu=3G

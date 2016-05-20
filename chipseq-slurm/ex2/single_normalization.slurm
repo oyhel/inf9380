@@ -10,7 +10,7 @@ source /cluster/bin/jobsetup
 module purge
 module load R
 
-cp programs/makeplots.R $SCRATCH
+cp ../programs/makeplots.R $SCRATCH
 cp N1_CHIP_countR.txt $SCRATCH
 cp T1_CHIP_countR.txt $SCRATCH
 cp T1_INPUT_countR.txt $SCRATCH

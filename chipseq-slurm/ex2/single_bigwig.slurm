@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=s_bigwig
+#SBATCH --job-name=bigwig
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=1
 #SBATCH --mem-per-cpu=3G
@@ -17,8 +17,8 @@ output=$2
 chkfile	$bigwigout
 
 cp $input $SCRATCH
-cp data/sacisizes.txt $SCRATCH
-cp programs/bedGraphToBigWig $SCRATCH
+cp ../data/sacisizes.txt $SCRATCH
+cp ../programs/bedGraphToBigWig $SCRATCH
 
 # script
 cd $SCRATCH

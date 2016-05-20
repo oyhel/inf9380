@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=s_alignment
+#SBATCH --job-name=alignment
 #SBATCH --account=ln0002k
 #SBATCH --ntasks=1
 #SBATCH --mem-per-cpu=3G
@@ -16,7 +16,7 @@ input=$1
 output=$2
 
 # copy files to compute node
-cp data/saci* $SCRATCH
+cp ../data/saci* $SCRATCH
 cp $input $SCRATCH 
 
 chkfile $output
