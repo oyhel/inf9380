@@ -32,8 +32,8 @@ else
 fi
 
 cp $input $SCRATCH
-cp data/sacisizes.txt $SCRATCH
-cp programs/bedGraphToBigWig $SCRATCH
+cp ../data/sacisizes.txt $SCRATCH
+cp ../programs/bedGraphToBigWig $SCRATCH
 
 chkfile $output
 

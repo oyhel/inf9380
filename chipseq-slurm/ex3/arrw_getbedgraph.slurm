@@ -33,7 +33,7 @@ else
 fi
 
 cp $input $SCRATCH
-cp data/sacisizes.txt $SCRATCH
+cp ../data/sacisizes.txt $SCRATCH
 
 chkfile $output
 

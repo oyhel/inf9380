@@ -33,8 +33,8 @@ module purge
 module load bowtie
 
 # copy files to compute node
-cp data/saci* $SCRATCH
-cp data/$input $SCRATCH
+cp ../data/saci* $SCRATCH
+cp ../data/$input $SCRATCH
 
 chkfile $output
 
